@@ -40,7 +40,7 @@
       <ul class="navbar-nav">
         {% for page in page_list %}
           <li class="nav-item">
-          <a  class="nav-link js-scroll-trigger" id="bio-side" href="{{page['file_name']}}">{{page['title']}}</a>
+          <a  class="nav-link js-scroll-trigger {% if title == page['title'] %} active {% endif %}" id="bio-side" href="{{page['file_name']}}">{{page['title']}}</a>
           </li>
         {% endfor %}
 

@@ -45,7 +45,15 @@ def generate_pages():
 	
 	return full_page
 
-generate_pages()
+def new_page():
+	open('content/new_content_page.html', 'w+').write("""<h1>New Content!</h1> 
+
+		<p>New Content...</p>""")
+
+
+
+
+
 
 
 
